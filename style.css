@@ -73,22 +73,23 @@ body {
 }
 
 .card__header .card__title {
-  font-size: 2rem;
+  font-size: clamp(1rem, 1rem + 2vw, 2rem);
   text-align: center;
   margin-bottom: 10px;
 }
 
 .card__header .card__subtitle {
   color: var(--primary-color);
-  font-size: 1.2rem;
+  font-size: clamp(.7rem, .7rem + 2vw, 1.2rem);
   margin-bottom: 30px;
 }
 
 .card__header .card__description {
   color: var(--neutral-white);
-  font-size: 1.2rem;
+  font-size: clamp(.7rem, .7rem + 2vw, 1.2rem);
   margin-bottom: 20px;
   text-align: center;
+  padding: 0 1.5rem;
 }
 
 .card__links__container {
@@ -138,10 +139,10 @@ body {
 
 
 
-@media only screen and (max-width: 24rem) {
+@media only screen and (max-width: 27rem) {
   
   .section__container {
-    min-width: clamp(12rem, 12rem + 50vw, 90vw);
+    min-width: clamp(12rem, 12rem + 50vw, 80vw);
     width: 15rem;
     display: flex;
     flex-direction: column;
